@@ -1,10 +1,10 @@
 # flag包使用详解
 
-##概述
-flag包提供了一系列解析命令行参数的功能接口
+## 概述
+- flag包提供了一系列解析命令行参数的功能接口
 
-###Variables
-    
+### Variables
+  
     var (
       CommandLine = NewFlagSet(os.Args[0], ExitOnError)
       ErrHelp     = errors.New("flag: help requested")
@@ -15,7 +15,7 @@ flag包提供了一系列解析命令行参数的功能接口
     )
 
 
-##包函数列表
+## 包函数列表
 - [func Arg(i int) string](Arg.md)
 - [func Args() []string](Args.md)
 - [func Bool(name string, value bool, usage string) *bool](Bool.md)
